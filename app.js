@@ -1,33 +1,45 @@
 
 
 let userName = prompt("Enter your name");
-let cityName = prompt("Enter your city name").toLowerCase(); 
+let cityName = prompt("Enter your city name").toLowerCase();
 
-if (cityName == "tokyo" || cityName == "karachi" || cityName == "paris" || cityName == "cairo" || cityName == "new york city" || cityName == "rio de janeiro" || cityName == "sydney") {
+if (cityName == "tokyo" || cityName == "karachi" || cityName == "paris" || cityName == "cairo" || cityName == "new york" || cityName == "rio de janeiro" || cityName == "sydney") {
 
-    if (cityName === "tokyo") {
-        document.write("<h2>Hello " + userName + "!</h2>");
-        document.write("City: Tokyo<br>");
-        document.write("Country: Japan<br>");
-        document.write("Continent: Asia<br>");
-        document.write("Weather: Humid subtropical, mostly sunny with occasional rain<br>");
-        document.write("Temperature Range: 5°C – 31°C");
-    }
-    else if (cityName === "karachi") {
-        // document.write("<h2>Hello " + userName + "!</h2>");
-        // document.write("City: Karachi<br>");
-        // document.write("Country: Pakistan<br>");
-        // document.write("Continent: Asia<br>");
-        // document.write("Weather: Arid/semi-arid, mostly sunny and dry<br>");
-        // document.write("Temperature Range: 11°C – 35°C");
+  if (cityName === "tokyo") {
 
-        document.write(`
+    document.write(`
+          <div class="background">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="custom-card text-center">
+                    <img src="./assests/images/tokyo.jpg" class="card-img-top" alt="tokyo-jpg">
+                    <div class="card-body">
+                      <h2 class="card-title">Hello ${userName} !</h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">City: Tokyo</li>
+                      <li class="list-group-item">Country: Japan</li>    
+                      <li class="list-group-item">Continent: Asia</li>
+                      <li class="list-group-item">Weather: Humid subtropical, mostly sunny with occasional rain</li>
+                      <li class="list-group-item">Temperature Range: 5°C – 31°C</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `);
+  }
+  else if (cityName === "karachi") {
+
+    document.write(`
             <div class="background">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-12 col-md-8 col-lg-6">
                     <div class="custom-card text-center">
-                      <img src="./assests/images/karachi.jpg" class="card-img-top" alt="karachi">
+                      <img src="./assests/images/karachi.jpg" class="card-img-top" alt="karachi-jpg">
                       <div class="card-body">
                         <h2 class="card-title">Hello ${userName} !</h2>
                       </div>
@@ -44,56 +56,147 @@ if (cityName == "tokyo" || cityName == "karachi" || cityName == "paris" || cityN
               </div>
             </div>
           `);
-          
-    }
+
+  }
 
 
-    
-    else if (cityName === "paris") {
-        document.write("<h2>Hello " + userName + "!</h2>");
-        document.write("City: Paris<br>");
-        document.write("Country: France<br>");
-        document.write("Continent: Europe<br>");
-        document.write("Weather: Temperate oceanic, cloudy with light rain<br>");
-        document.write("Temperature Range: 3°C – 25°C");
-    }
-    else if (cityName === "new york city") {
-        document.write("<h2>Hello " + userName + "!</h2>");
-        document.write("City: New York City<br>");
-        document.write("Country: USA<br>");
-        document.write("Continent: North America<br>");
-        document.write("Weather: Humid subtropical, sunny, snowy winters, humid summers<br>");
-        document.write("Temperature Range: -3°C – 30°C");
-    }
-    else if (cityName === "rio de janeiro") {
-        document.write("<h2>Hello " + userName + "!</h2>");
-        document.write("City: Rio de Janeiro <br>");
-        document.write("Country: Brazil<br>");
-        document.write("Continent: South America<br>");
-        document.write("Weather: Tropical, sunny, humid, rainy summers<br>");
-        document.write("Temperature Range: 18°C – 32°C");
-    }
-    else if (cityName === "cairo") {
-        document.write("<h2>Hello " + userName + "!</h2>");
-        document.write("City: Cairo<br>");
-        document.write("Country: Egypt<br>");
-        document.write("Continent: Africa<br>");
-        document.write("Weather: Hot desert, sunny and dry<br>");
-        document.write("Temperature Range: 9°C – 35°C");
-    }
-    else if (cityName === "sydney") {
-        document.write("<h2>Hello " + userName + "!</h2>");
-        document.write("City: Sydney<br>");
-        document.write("Country: Australia<br>");
-        document.write("Continent: Australia (Oceania)<br>");
-        document.write("Weather: Temperate, mostly sunny with occasional showers<br>");
-        document.write("Temperature Range: 8°C – 26°C");
-    }
 
-} 
+  else if (cityName === "paris") {
+
+    document.write(`
+          <div class="background">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="custom-card text-center">
+                    <img src="./assests/images/paris.jpg" class="card-img-top" alt="paris-jpg">
+                    <div class="card-body">
+                      <h2 class="card-title">Hello ${userName} !</h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">City: Paris</li>
+                      <li class="list-group-item">Country: France </li>    
+                      <li class="list-group-item">Continent: Eroupe</li>
+                      <li class="list-group-item">Weather: Temperate oceanic, cloudy with light rain</li>
+                      <li class="list-group-item">Temperature Range: 3°C – 25°C</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `);
+  }
+  else if (cityName === "new york") {
+
+    document.write(`
+          <div class="background">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="custom-card text-center">
+                    <img src="./assests/images/new-york.jpg" class="card-img-top" alt="new-york-jpg">
+                    <div class="card-body">
+                      <h2 class="card-title">Hello ${userName} !</h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">City: New York City</li>
+                      <li class="list-group-item">Country: USA</li>    
+                      <li class="list-group-item">Continent: North America</li>
+                      <li class="list-group-item">Weather: Humid subtropical, sunny, snowy winters, humid summers</li>
+                      <li class="list-group-item">emperature Range: -3°C – 30°C</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `);
+  }
+  else if (cityName === "rio de janeiro") {
+
+    document.write(`
+          <div class="background">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="custom-card text-center">
+                    <img src="./assests/images/rio-de-janeiro.jpg" class="card-img-top" alt="rio-de-jpg-janeiro">
+                    <div class="card-body">
+                      <h2 class="card-title">Hello ${userName} !</h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">City: Rio de Janeiro</li>
+                      <li class="list-group-item">Country: Brazil </li>    
+                      <li class="list-group-item">Continent: South America</li>
+                      <li class="list-group-item">Weather: Tropical, sunny, humid, rainy summers</li>
+                      <li class="list-group-item">Temperature Range: 18°C – 32°C</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `);
+
+  }
+  else if (cityName === "cairo") {
+
+    document.write(`
+          <div class="background">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="custom-card text-center">
+                    <img src="./assests/images/cairo.jpg" class="card-img-top" alt="cairo-jpg">
+                    <div class="card-body">
+                      <h2 class="card-title">Hello ${userName} !</h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">City: Cairo</li>
+                      <li class="list-group-item">Country: Egypt </li>    
+                      <li class="list-group-item">Continent: Africa</li>
+                      <li class="list-group-item">Weather: Hot desert, sunny and dry</li>
+                      <li class="list-group-item">Temperature Range: 9°C – 35°C</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `);
+  }
+  else if (cityName === "sydney") {
+
+    document.write(`
+          <div class="background">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="custom-card text-center">
+                    <img src="./assests/images/sydney.jpg" class="card-img-top" alt="sydney-jpg">
+                    <div class="card-body">
+                      <h2 class="card-title">Hello ${userName} !</h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">City: Sydney</li>
+                      <li class="list-group-item">Country: Australia </li>    
+                      <li class="list-group-item">Continent: Australia</li>
+                      <li class="list-group-item">Weather: Temperate, mostly sunny with occasional showers</li>
+                      <li class="list-group-item">Temperature Range: 8°C – 26°C</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `);
+  }
+
+}
 else {
-    document.write("<h2>Hello " + userName + "!</h2>");
-    document.write("City not found in database.");
+  document.write("<h2>Hello " + userName + "!</h2>");
+  document.write("City not found in database.");
 }
 
 
